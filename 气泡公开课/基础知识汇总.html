@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    /* 
+    1、
+    *代表的是通配符，选中所有的元素 
+    注意：如果是在做项目的时候，咱们应该把页面中经常用到的元素，都列出来然后清除margin值和padding值，例如：div,p,h1,h2,h3{margin:0;padding:0;}
+    
+    */
+      /* *{
+          margin:0;
+          padding:0;
+      } */
+      body{
+          background:green;
+      }
+      .box{
+          width:100px;
+          height:100px;
+          /* 3、背景色透明 */
+          background:rgba(255,255,255,1);
+          animation: run 2s linear 1s;
+      }
+      /* 2、清除列表中自带的默认样式 */
+      ul,ol{list-style: none;}
+
+      @keyframes run{
+          0%{
+              transform:translateX(0);
+          }
+          100%{
+            transform:translateX(800px);
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <ul>
+        <li>上班</li>
+        <li>吃饭</li>
+        <li>打豆豆</li>
+    </ul>
+    <ol>
+            <li>上班</li>
+            <li>吃饭</li>
+            <li>打豆豆</li>
+    </ol>
+</body>
+</html>
